@@ -36,7 +36,7 @@ const PfpGenerator = () => {
     setLoading(true);
     setError(null);
 
-    const fullPrompt = `In a vibrant neubrutalist pop-art style with thick outlines: ${prompt}`;
+    const fullPrompt = `${prompt}`;
 
     try {
       const formData = new FormData();

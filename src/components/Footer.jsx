@@ -43,7 +43,7 @@ const Footer = ({ cau }) => {
             <a href="https://x.com/Hyrax_sol" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>
               <FaTwitter />
             </a>
-            <a href="https://www.tiktok.com/search?q=hyrax" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>
+            <a href="https://www.tiktok.com/search?q=hyrax&t=1776364718778" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>
               <FaTiktok />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTiktok, FaTwitter } from 'react-icons/fa';
 
 const Navbar = ({ cau }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +35,14 @@ const Navbar = ({ cau }) => {
           <a href="#lore" onClick={() => setIsOpen(false)}>Origins</a>
           <a href="#how-to-buy" onClick={() => setIsOpen(false)}>Get Some</a>
           <a href="#pfp-gen" onClick={() => setIsOpen(false)}>PFP Maker</a>
+          <div style={{ display: 'flex', gap: '15px' }}>
+            <a href="https://x.com/Hyrax_sol" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'var(--ink)' }}>
+              <FaTwitter />
+            </a>
+            <a href="https://www.tiktok.com/search?q=hyrax&t=1776364718778" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.5rem', color: 'var(--ink)' }}>
+              <FaTiktok />
+            </a>
+          </div>
           <a 
             href={`https://pump.fun/${cau}`} 
             target="_blank" 
@@ -71,6 +79,9 @@ const Navbar = ({ cau }) => {
           }
           .nav-links a {
             font-size: 1.5rem;
+          }
+          .nav-links div {
+            margin: 10px 0;
           }
           .nav-links .btn-nb {
             width: 100%;

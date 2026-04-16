@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaTwitter, FaTiktok } from 'react-icons/fa';
 
 const Hero = ({ cau }) => {
   const [boops, setBoops] = useState(0);
@@ -103,13 +104,33 @@ const Hero = ({ cau }) => {
               The ultimate utility is zero utility. $HYRAX is the spirit animal of the bull market.
             </p>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
               <a href={`https://pump.fun/${cau}`} target="_blank" rel="noopener noreferrer" className="btn-nb">
                 GET $HYRAX
               </a>
               <a href={`https://dexscreener.com/solana/${cau}`} target="_blank" rel="noopener noreferrer" className="btn-nb btn-white">
                 VIEW CHART
               </a>
+              <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                <a 
+                  href="https://x.com/Hyrax_sol" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-nb"
+                  style={{ padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                >
+                  <FaTwitter size={24} />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/search?q=hyrax&t=1776364718778" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-nb"
+                  style={{ padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                >
+                  <FaTiktok size={24} />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -206,6 +227,7 @@ const Hero = ({ cau }) => {
           .hero-image-side { order: 1; margin: 0 auto; }
           .hero-text-side h1 { fontSize: 3.5rem !important; }
           .hero-image-side .mascot-frame { width: 300px !important; height: 300px !important; }
+          .hero-text-side div { justify-content: center; }
         }
       `}</style>
     </section>
